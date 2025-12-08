@@ -24,7 +24,7 @@ export default function Services() {
     </div>
 
   <section className="flex flex-wrap justify-center items-center gap-6 w-full">
-    <div className="border-3 border-amber-50 rounded-2xl flex flex-col gap-4 px-6 py-3 shadow-lg md:w-1/4">
+    <div className="border-3 border-amber-50 rounded-2xl flex flex-col gap-4 px-6 py-6 shadow-lg md:w-1/4">
     <IdentificationCard size={48} className="text-cyan-400 glow" />
       <p className="text-gray-500 font-semibold">STEP 1</p>
       <h1 className="font-bold text-[22px]">Enter Your Details</h1>

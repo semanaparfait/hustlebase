@@ -2,10 +2,10 @@ export default function Footer() {
   return (
         <main className=" w-full">
             <section>
-                <div className="bg-[#0c4242] text-white rounded-2xl flex flex-wrap w-[96%] gap-3 items-center justify-between p-15 mx-auto mt-10">
+                <div className="bg-[#0c4242] text-white rounded-2xl flex flex-wrap w-[96%] gap-8 items-center justify-between p-15 mx-auto mt-10">
                     <div className="md:w-1/2">
                         <h1 className="font-bold text-3xl">Subscribe our <br /> newsletter</h1>
-                        <p className="pt-2">Subscribe to our newsletter and be the first to recive insights, updates,and expert tips on optimizing your financial managememnt.</p>
+                        <p className="pt-2 hidden md:block">Subscribe to our newsletter and be the first to recive insights, updates,and expert tips on optimizing your financial managememnt.</p>
                     </div>
                     <div>
                         <label className="font-medium px-2.5 mb-5">Stay up to date</label>
@@ -24,7 +24,7 @@ export default function Footer() {
             <section className="flex flex-wrap gap-4 items-center justify-between px-4 h-[17rem]">
                 <div>
                     <img src="/logo.png" alt="logo for thr footer"  width={170}/>
-                    <p className="md:w-[40%]">Your all-in-one career assistant. Build CVs, automate job applications, and track your career growth in one place.</p>
+                    <p className="md:w-[40%] md:block hidden">Your all-in-one career assistant. Build CVs, automate job applications, and track your career growth in one place.</p>
                 </div>
                 <div className="flex md:gap-20 gap-5 cursor-pointer">
                     <ul>
