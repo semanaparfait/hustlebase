@@ -1,0 +1,17 @@
+.link-user{
+    li{
+        transition: background-color 0.3s ease;
+        &:hover{
+            background-color: #16a34a; /* Tailwind's green-700 */
+        }
+    }
+    
+}
+/* aside ul li span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+aside:hover ul li span {
+    opacity: 1;
+} */

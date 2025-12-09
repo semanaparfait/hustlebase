@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Pricing />
-      {/* <Footer /> */}
+      <Footer />
       
     </div>
   );

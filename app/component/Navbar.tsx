@@ -1,9 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("Home");
 
   useEffect(() => {
     const onScroll = () => {
@@ -29,9 +32,34 @@ export default function Navbar() {
       </Link>
 
       <ul className="hidden md:flex ml-8 gap-4 text-slate-600 font-medium">
-        <li className="ml-4 cursor-pointer hover:text-blue-600 transition">Home</li>
-        <li className="ml-4 cursor-pointer hover:text-blue-600 transition">About</li>
-        <li className="ml-4 cursor-pointer hover:text-blue-600 transition">Contact us</li>
+      <li
+        className={`ml-4 cursor-pointer transition ${
+          pathname === "/"
+            ? "bg-green-900 text-white py-1 px-4 rounded-lg"
+            : "hover:text-blue-600"
+        }`}
+      >
+        <Link href="/">Home</Link>
+      </li>
+      <li
+      className={`ml-4 cursor-pointer transition ${
+        pathname === "/about"
+          ? "bg-green-900 text-white py-1 px-4 rounded-lg"
+          : "hover:text-blue-600"
+      }`}
+    >
+        <Link href="/about">about</Link>
+      </li>
+      <li
+        className={`ml-4 cursor-pointer transition ${
+          pathname === "/contact"
+            ? "bg-green-900 text-white py-1 px-4 rounded-lg"
+            : "hover:text-blue-600"
+        }`}
+      >
+        <Link href="/contact">Contact us</Link>
+      </li>
+
       </ul>
 
       <Link href="/account">

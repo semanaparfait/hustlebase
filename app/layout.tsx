@@ -33,7 +33,7 @@ export default function RootLayout({
         <AuroraBackground>
           {/* <Navbar /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </AuroraBackground>
       </body>
     </html>
