@@ -85,7 +85,7 @@ export default function contact (){
             </div>
 
                 <input type="text" placeholder="Name"  className="border px-3 py-1.5 rounded-2xl outline-none"/>
-                <textarea  cols="28" rows="10" placeholder="Enter your Message" className="border px-4 resize-none rounded-2xl outline-none "></textarea>
+                {/* <textarea  cols="28" rows="10" placeholder="Enter your Message" className="border px-4 resize-none rounded-2xl outline-none "></textarea> */}
             <button className="bg-green-950 text-white py-2 rounded-2xl font-medium">Submit <i className="fa-solid fa-paper-plane"></i></button>
             </form>
             </section>
