@@ -1,7 +1,7 @@
 import {KeySquare} from "lucide-react";
 export default function MyProfile() {
     return (
-      <main className="h-screen  flex flex-col">
+      <main className="h-screen  flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold text-gray-900  mb-4">
     My Profile page
     </h1>
@@ -34,7 +34,7 @@ export default function MyProfile() {
         <p className="flex font-semibold"> <KeySquare/>Change Password</p>
         <div className="w-[42%] flex flex-col">
         <label className="text-sm font-medium ">CURRENT PASSWORD</label>
-        <input type="password" className="border-2 rounded-lg py-1 px-2 mb-2"/>
+        <input type="password" className="border-2 rounded-lg py-1 px-2 mb-2 w-full"/>
         <label className="text-sm font-medium ">NEW PASSWORD</label>
         <input type="password" className="border-2 rounded-lg py-1 px-2 mb-2"/>
         <label className="text-sm font-medium ">NEW PASSWORD</label>

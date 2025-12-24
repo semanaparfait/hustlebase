@@ -5,7 +5,9 @@ import Link from 'next/link';
 export default function UserRootPage() {
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-3xl font-bold text-gray-800">Welcome to Akazi!</h1>
+      <h1 className="text-3xl font-bold text-gray-800">
+
+      </h1>
       <p className="text-gray-600">
         This is your central hub for job applications, profile management, and more.
       </p>

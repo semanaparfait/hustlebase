@@ -44,7 +44,7 @@ export default function UserLayout({
         <aside className=" bg-white  text flex flex-col justify-between">
     <ul className="mt-4 space-y-1 link-user">
       {links.map((link) => (
-<Link 
+      <Link  key={link.name}  
                 href={`/user/${link.name.toLowerCase().replace(' ', '-')}`}
                 // 2. Add the styling to the <Link> instead of the <li>
                 className="flex items-center gap-2 px-4 py-3 hover:bg-green-700 hover:text-white"
